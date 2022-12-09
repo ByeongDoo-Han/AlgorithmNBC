@@ -8,10 +8,10 @@
 
 - 주석 : 코드 설명보다는 아이디어 도출 과정 위주
 - 네이밍 : 변수, 함수명은 최대한 시멘틱하게 작성
-- 파일명 : `문제번호-문제_이름-작성자.py`
+- 파일명 : `문제번호-문제_이름-작성자.java`
   - 요소 간 구분 : `-` (hyphen)
   - 요소 내 공백 : `_` (underbar)
-  - ex : `10094-에라스토스의_체-hanbyeongdoo.py`
+  - ex : `17681-비밀지도-byeongdoo.java`
 
 <br />
 
@@ -31,7 +31,7 @@
 - chore : 그 외 자잘한 수정(디렉토리 추가 등..)
 
 # e.g
-"code: Solve boj 10972 에라토스테네스의 체 (yoonbaek)"
+"code: Solve programmers 17681 비밀지도 (byeongdoo)"
 "refac: Change input() to readline()"
 ```
 
