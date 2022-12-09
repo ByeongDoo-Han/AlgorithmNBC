@@ -39,7 +39,7 @@ for data in datas:
 
         for member in members:
             if member == 'taewoong':
-                filepath = os.path.join(path, f'{problem}-{member}.py')
+                filepath = os.path.join(path, f'{problem}-{member}.java')
                 fid = open(filepath, 'w', encoding='utf8')
                 fid.write(
                     f'// git commit -m "code: Solve programmers {num} {title} ({member})"')
