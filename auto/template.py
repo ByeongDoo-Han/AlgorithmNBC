@@ -3,7 +3,7 @@ import os
 
 # ----------------------------------------------------------------------------------
 print('------------------------------------------------------------')
-print('노션 테이블의 [문제번호][문제 이름][알고리즘 분류]를 복붙 후 ENTER 2번 눌러주세요.')
+print('[문제번호][문제 이름][알고리즘 분류]를 복붙 후 ENTER 2번 눌러주세요.')
 print('------------------------------------------------------------')
 
 datas = []
@@ -23,8 +23,8 @@ for data in datas:
     title = ' '.join(data)
     title_bar = title.replace(' ', '_')
 
-    problem = f'{num}-{title_bar}'
-    path = f'./{category}/{problem}'
+    problem = f"{num}-{title_bar}"
+    path = f"./{category}/{problem}"
 
     readme = f"# {str(num)} {title}\nhttps://school.programmers.co.kr/learn/courses/30/lessons/{num}"
 
@@ -34,10 +34,16 @@ for data in datas:
     if not os.path.exists(path):
         os.makedirs(path)
         # 개별 파일 생성
-        members = ['kyeonghwa', 'taewoong', 'jieun', 'jaehyeok', 'byeongdoo']
+        members = ['kyeonghwa', 'taewoong',
+                   'jieun', 'jaehyeok', 'sol', 'byeongdoo']
 
         for member in members:
             if member == 'taewoong':
+                filepath = os.path.join(path, f'{problem}-{member}.py')
+                fid = open(filepath, 'w', encoding='utf8')
+                fid.write(
+                    f'// git commit -m "code: Solve programmers {num} {title} ({member})"')
+            elif member == 'kyeonghwa':
                 filepath = os.path.join(path, f'{problem}-{member}.py')
                 fid = open(filepath, 'w', encoding='utf8')
                 fid.write(
