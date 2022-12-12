@@ -1,3 +1,7 @@
+# Notion
+
+https://just-toad-64b.notion.site/AlgorithmNBC-867ae878dcff46628b951e357497e229
+
 # Algorithm-study
 
 알고리즘 스터디 레포

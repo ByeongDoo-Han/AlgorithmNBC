@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120831 짝수의합 (jaehyeok)"
