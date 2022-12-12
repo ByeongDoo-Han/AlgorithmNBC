@@ -11,6 +11,7 @@ public class jaehyeok_12090 {
     }
 }
 class Solution {
+    //OX퀴즈
     public ArrayList<String> solution(String[] quiz) {
         ArrayList<String> OXList = new ArrayList<>();
 
