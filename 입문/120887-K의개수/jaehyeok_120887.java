@@ -7,6 +7,7 @@ public class jaehyeok_120887 {
     }
 }
 class Solution {
+    //k의개수
     public int solution(int i, int j, int k) {
         int count = 0;
         int startValue;
