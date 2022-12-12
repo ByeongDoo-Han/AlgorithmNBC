@@ -7,7 +7,7 @@ public class jaehyeok_120887 {
     }
 }
 class Solution {
-    //k의개수
+    //k의개수  두번째 제출..
     public int solution(int i, int j, int k) {
         int count = 0;
         int startValue;
