@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120866 안전지대 (jaehyeok)"
