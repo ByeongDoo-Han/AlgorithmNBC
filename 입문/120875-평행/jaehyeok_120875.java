@@ -4,46 +4,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Solution {
+
+class Solution120875 {
+
     public int solution(int[][] dots) {
         int answer = 0;
 
-        ArrayList<Integer> xDots = new ArrayList<>(Arrays.asList(dots[0][0],dots[1][0],dots[2][0],dots[3][0]));
-        ArrayList<Integer> yDots = new ArrayList<>(Arrays.asList(dots[0][1],dots[1][1],dots[2][1],dots[3][1]));
-
-        ArrayList<Double> doubleXdots = new ArrayList<>();
-        ArrayList<Double> doubleYdots = new ArrayList<>();
+        ArrayList<Double> xDots = new ArrayList<>(Arrays.asList((double)dots[0][0],(double)dots[1][0],(double)dots[2][0],(double)dots[3][0]));
+        ArrayList<Double> yDots = new ArrayList<>(Arrays.asList((double)dots[0][1],(double)dots[1][1],(double)dots[2][1],(double)dots[3][1]));
 
         xDots.sort(Comparator.naturalOrder());
         yDots.sort(Comparator.naturalOrder());
 
-        for (Integer xDot : xDots) {
-            doubleXdots.add(xDot.doubleValue());
-        }
-        for (Integer yDot : yDots) {
-            doubleYdots.add(yDot.doubleValue());
-        }
+        double gradientCaseOne = (yDots.get(3)- yDots.get(0))/(xDots.get(1)-xDots.get(0));
+        double gradientCaseTwo = (yDots.get(2)- yDots.get(1))/(xDots.get(3)-xDots.get(2));
 
-        double gradientCaseOne = (doubleYdots.get(3)- doubleYdots.get(0))/(doubleXdots.get(1)-doubleXdots.get(0));
-        double gradientCaseTwo = (doubleYdots.get(2)- doubleYdots.get(1))/(doubleXdots.get(3)-doubleXdots.get(2));
+        double gradientCaseThree = (yDots.get(3)- yDots.get(2))/(xDots.get(3)-xDots.get(1));
+        double gradientCaseFlour = (yDots.get(1)- yDots.get(0))/(xDots.get(2)-xDots.get(0));
 
-        double gradientCaseThree = (doubleYdots.get(3)- doubleYdots.get(2))/(doubleXdots.get(3)-doubleXdots.get(1));
-        double gradientCaseFlour = (doubleYdots.get(1)- doubleYdots.get(0))/(doubleXdots.get(2)-doubleXdots.get(0));
+        double gradientCaseNine = (yDots.get(1)- yDots.get(0))/(xDots.get(1)-xDots.get(0));
+        double gradientCaseTen = (yDots.get(3)- yDots.get(2))/(xDots.get(3)-xDots.get(2));
 
-        double gradientCaseNine = (doubleYdots.get(1)- doubleYdots.get(0))/(doubleXdots.get(1)-doubleXdots.get(0));
-        double gradientCaseTen = (doubleYdots.get(3)- doubleYdots.get(2))/(doubleXdots.get(3)-doubleXdots.get(0));
-
-        String restrictCaseOne = String.format("%5f", gradientCaseOne);
-        String restrictCaseTwo = String.format("%5f", gradientCaseTwo);
-
-        String restrictCaseThree = String.format("%5f", gradientCaseThree);
-        String restrictCaseFlour = String.format("%5f", gradientCaseFlour);
-
-
-        String restrictCaseNine = String.format("%5f", gradientCaseNine);
-        String restrictCaseTen = String.format("%5f", gradientCaseTen);
-
-        if(restrictCaseOne.equals(restrictCaseTwo)||restrictCaseThree.equals(restrictCaseFlour)||(restrictCaseNine.equals(restrictCaseTen))){
+        if(gradientCaseOne==(gradientCaseTwo)||gradientCaseThree==(gradientCaseFlour)||(gradientCaseNine==(gradientCaseTen))){
             ++answer;
         }
         return answer;
