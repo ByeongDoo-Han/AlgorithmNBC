@@ -8,26 +8,26 @@ class Solution {
 
     public Set<String> solution(String[] strings, int n) {
 
-        ArrayList<String> oneStringList = new ArrayList<>();
+        ArrayList<Character> oneStringList = new ArrayList<>();
         ArrayList<String> originStrings = new ArrayList<>();
 
         for (String string : strings) {
             originStrings.add(string);
+
             char[] chars = string.toCharArray();
             char compareChar =chars[n];
-            String stringAddData =String.valueOf(compareChar);
-            oneStringList.add(stringAddData);
-        }
 
+            oneStringList.add(compareChar);
+        }
         oneStringList.sort(Comparator.naturalOrder());
         originStrings.sort(Comparator.naturalOrder());
 
         Set<String> noRepeatAnswer = new LinkedHashSet<>();
 
-        for (String s : oneStringList) {
+        for (char s : oneStringList) {
             for (String originString : originStrings) {
-                String compareString = String.valueOf(originString.charAt(n));
-                if(s.equals(compareString)){
+                char compareString =originString.charAt(n);
+                if((s)==(compareString)){
                     noRepeatAnswer.add(originString);
                 }
             }
