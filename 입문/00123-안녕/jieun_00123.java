@@ -1,1 +1,5 @@
-// git commit -m "code: Solve programmers 00123 안녕 (jieun)"
+class jieun_00123{
+    private static void main(String[] args){
+        System.out.println("hello java");
+    }
+}
