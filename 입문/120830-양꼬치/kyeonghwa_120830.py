@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120830 양꼬치 (kyeonghwa)"
