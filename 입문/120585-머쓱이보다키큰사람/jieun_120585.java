@@ -1,1 +1,9 @@
-// git commit -m "code: Solve programmers 120585 머쓱이보다키큰사람 (jieun)"
+class Solution {
+    public int solution(int[] array, int height) {
+        int answer = 0;
+        for(int num : array){
+            if(num - height > 0) answer++;
+        }
+        return answer;
+    }
+}
