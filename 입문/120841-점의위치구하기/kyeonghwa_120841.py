@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120841 점의위치구하기 (kyeonghwa)"
