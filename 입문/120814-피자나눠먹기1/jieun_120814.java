@@ -1,1 +1,9 @@
-// git commit -m "code: Solve programmers 120814 피자나눠먹기1 (jieun)"
+class Solution {
+    public int solution(int n) {
+        if(n % 7 == 0){
+            return n/7;
+        }else {
+            return n/7 + 1;
+        }
+    }
+}
