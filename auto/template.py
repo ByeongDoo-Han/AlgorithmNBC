@@ -44,7 +44,7 @@ for data in datas:
                 fid.write(
                     f'// git commit -m "code: Solve programmers {num} {title} ({member})"')
             elif member == 'kyeonghwa':
-                filepath = os.path.join(path, f'{member}_{num}.py')
+                filepath = os.path.join(path, f'{member}_{num}.java')
                 fid = open(filepath, 'w', encoding='utf8')
                 fid.write(
                     f'// git commit -m "code: Solve programmers {num} {title} ({member})"')

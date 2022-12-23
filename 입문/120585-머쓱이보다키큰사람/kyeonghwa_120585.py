@@ -1,1 +1,0 @@
-// git commit -m "code: Solve programmers 120585 머쓱이보다키큰사람 (kyeonghwa)"
