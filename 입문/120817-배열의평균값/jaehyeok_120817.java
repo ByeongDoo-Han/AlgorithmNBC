@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120817 배열의평균값 (jaehyeok)"
