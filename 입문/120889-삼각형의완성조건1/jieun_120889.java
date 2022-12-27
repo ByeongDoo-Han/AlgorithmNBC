@@ -1,1 +1,17 @@
-// git commit -m "code: Solve programmers 120889 삼각형의완성조건1 (jieun)"
+class Solution {
+    public int solution(int[] sides) {
+        int max=sides[0];
+        int sum = 0;
+        for (int i = 0; i < sides.length; i++){      
+            if (max < sides[i]){
+                max = sides[i];
+            }
+            sum += sides[i];
+        }
+        if(sum - max > max){
+            return 1;
+        }else{
+            return 2;
+        }
+    }
+}
