@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120905 n의배수고르기 (taewoong)"
