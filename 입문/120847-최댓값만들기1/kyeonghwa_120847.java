@@ -1,1 +1,8 @@
-// git commit -m "code: Solve programmers 120847 최댓값만들기1 (kyeonghwa)"
+import java.util.Arrays;
+class Solution {
+    public int solution(int[] numbers) {
+        Arrays.sort(numbers);
+        int answer = numbers[numbers.length-2]*numbers[numbers.length-1];
+        return answer;
+    }
+}
