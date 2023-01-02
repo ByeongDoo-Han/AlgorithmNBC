@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120897 약수구하기 (taewoong)"

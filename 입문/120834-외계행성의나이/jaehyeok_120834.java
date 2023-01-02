@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120834 외계행성의나이 (jaehyeok)"
