@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120913 잘라서배열로저장하기 (taewoong)"

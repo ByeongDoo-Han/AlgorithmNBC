@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120912 7의개수 (jaehyeok)"

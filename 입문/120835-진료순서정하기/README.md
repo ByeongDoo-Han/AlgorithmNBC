@@ -1,0 +1,2 @@
+# 120835 진료순서정하기
+https://school.programmers.co.kr/learn/courses/30/lessons/120835
