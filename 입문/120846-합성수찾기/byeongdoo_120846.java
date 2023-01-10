@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 120846 합성수찾기 (byeongdoo)"
