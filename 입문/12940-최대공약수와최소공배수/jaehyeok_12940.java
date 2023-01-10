@@ -1,0 +1,1 @@
+// git commit -m "code: Solve programmers 12940 최대공약수와최소공배수 (jaehyeok)"
